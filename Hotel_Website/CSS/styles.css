@@ -259,6 +259,47 @@ header {
     margin-right: 20px;
 }
 
+/* CONTACT PAGE STYLING */
+
+/* FORM SECTION STYLING */
+
+.contact-form p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form form .form-group label,
+.contact-form form .form-group input{
+    display: block;
+}
+
+.contact-form form .form-group input,
+.contact-form form .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+.contact-form form .form-group textarea {
+    height: 200px;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+    border: 1px solid #f7c08a;
+    outline: none;
+}
+
+.contact-form form button {
+    font-size: 16px;
+}
+
+#contact-info {
+    background-color: #333;
+    color: #fff;
+} 
 
 
 /* FOOTER STYLING */
