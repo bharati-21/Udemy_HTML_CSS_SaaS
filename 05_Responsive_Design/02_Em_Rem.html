@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Em and Rem Units</title>
+        <style>
+            html {
+                font-size: 10px;
+                font-size: 62.5%; 
+                /* same as  10px */
+            }
+
+            #box-1 {
+                font-size: 20px;
+            }
+            #box-1 p {
+                font-size: 1.5em;
+                /* 30px (1.5 * 20) */
+                padding: 1em;
+                /* padding is 30px and not 20 */
+            }
+
+            #box-1 ul {
+                font-size: 1.2em;
+                /* The outer ul has a font-size of 24 (20 * 1.2) */
+                /* Nested ul has a font-size of 28.8 (24 * 1.2) */
+            }
+
+            #box-2 h3 {
+                font-size: 2rem;
+                /* 16 * 2 = 32 */
+            }
+
+            #box-2 p {
+                font-size: 1.6rem;
+                /* 16 * 1.6 = 25.6 */
+                line-height: 1.7rem;
+                /* 16 * 1.7 = 27.2 */
+            }
+
+            /* em units are not affected when the font-size of the browser (root element) is changed */
+            /* rem units are more responsive and adaptive when root element's font-size is changed */
+        </style>
+    </head>
+    <body>
+        <div id="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum velit modi optio provident assumenda voluptatem eos odit voluptatibus molestias? Eaque amet magnam unde similique expedita, natus cum iure optio id.</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ul>
+                        <li>3.1</li>
+                        <li>3.2
+                            <ul> 
+                                <!-- 34.56 font-size -->
+                                <li>3.2.1</li>
+                                <li>3.2.2</li>
+                                <li>3.2.3</li>
+                            </ul>
+                        </li>
+                        <li>3.3</li>
+                    </ul>
+                </li>
+                <li>4</li>
+            </ul>
+        </div>
+        <div id="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum velit modi optio provident assumenda voluptatem eos odit voluptatibus molestias? Eaque amet magnam unde similique expedita, natus cum iure optio id.</p>
+        </div>
+    </body>
+</html>
