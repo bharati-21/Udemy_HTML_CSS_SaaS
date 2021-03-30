@@ -1,3 +1,4 @@
+/* index.html */
 #navbar .logo {
     float: none;
     text-align: center;
@@ -13,8 +14,17 @@
     border-bottom: 1px #444 dotted;
 }
 
+#showcase {
+    height: 100%;
+}
+
+#showcase-text {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 #home-info {
-    height: 550px;
+    height: 100%;
 }
 
 #home-info .info-img {
@@ -32,6 +42,7 @@
     width: 100%;
 }
 
+/* about.html */
 #about-info #about-text,
 #about-info #about-img {
     float: none;
@@ -40,12 +51,15 @@
 
 .l-heading {
     text-align: center;
+    line-height: 1.2em;
 }
 
 #about-info #about-img {
     margin-top: 30px;
 }
 
-section#contact-info div.box {    
-    border-bottom: #ccc dotted 1px;
+/* contact.html */
+#contact-info .box {
+    border-bottom: 2px dotted #444;
 }
+
