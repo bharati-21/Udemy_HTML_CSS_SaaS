@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    COLOR PALETTE: 
+    #93cb52
+    #f4f4f4
+    #333333
+    #7ab346
+    #ffffff
+*/
+
+body {
+    color: #fff;
+    line-height: 1.7em;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+/* UTILITY CLASSES */
+.primary-color {
+    color: #7ab346;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.current-link {
+    color:#444;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+
+.l-heading {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+.l-paragraph {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
+
+.btn {
+    color: #f4f4f4;
+    background: #93cb52;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background: #7ab346;
+}
+
+/* index.html */
+
+/* HEADER */ 
+
+header {
+    background: #333;
+    color: #f4f4f4;
+}
+
+header #navbar {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #navbar #logo .logo {
+    display: inline-block;
+    font-size: 32px;
+}
+
+header #navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header #navbar nav ul li a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+header #navbar nav ul li a:hover {
+    background: #7ab346;
+    border-radius: 5px;
+    color: #fff;
+}
+
+header #showcase {
+    background: #333 url('../Images/home/showcase.jpg') no-repeat center center/cover;
+    
+    background-blend-mode: overlay;
+}
+
+header #showcase-content {
+    padding: 0 5rem;
+    display: flex;
+    text-align: center;
+    height: 90vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+header #showcase-content h1 {
+    padding-bottom: 20px;
+}
+
+header #showcase-content p {
+    padding-bottom: 20px;
+}
+
