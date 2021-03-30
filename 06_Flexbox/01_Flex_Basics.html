@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Basics</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .flex-container {
+                display: flex;
+                /* flex-direction: column; */
+                /* flex-wrap: wrap; */ 
+            }
+
+            .item {
+                background: #f4f4f4;
+                border: 2px solid #ccc;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                
+                /* 
+                    flex-shrink: 0;  (none of the item shrinks)
+                */
+
+                /* 
+                    flex-shrink: 1;  (All the items grow evenly to fill the entire space of the container)
+                */ 
+
+                /**/
+                flex: 1; /* flex-grow: 1 */
+                
+                /*flex: 1 0 200px; /* the items do not shrink beyond 200px; */ 
+            }
+
+            /* .item-1 {
+                flex-shrink: 0;
+                This item does not shrink when the parent width changes
+            }*/
+
+            /*.item-2 {
+                flex-grow: 1;
+                This item takes up the remaining space of the container
+                flex-basis: 0;
+                sets initial main size of a flex item 
+            }*/
+
+            .item-3 {
+                /*flex-grow: 2;
+                flex-basis: 0;*/
+
+                flex: 3;
+            } 
+        </style>
+        
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="item item-1">
+                <h3>Item 1</h3>
+            </div>
+            <div class="item item-2">
+                <h3>Item 2</h3>
+            </div>
+            <div class="item item-3">
+                <h3>Item 3</h3>
+            </div>
+        </div>
+    </body>
+</html>
