@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,120 +9,96 @@
 
 /*
     COLOR PALETTE: 
-    #93cb52
+    #28a745
     #f4f4f4
     #333333
-    #7ab346
     #ffffff
 */
 
 body {
-    color: #fff;
-    line-height: 1.7em;
-    font-family: 'Roboto', sans-serif, Arial, Helvetica;
-}
-
-/* UTILITY CLASSES */
-.primary-color {
-    color: #7ab346;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.current-link {
-    color:#444;
-    background-color: #ccc;
-    border-radius: 5px;
-}
-
-
-.l-heading {
-    font-size: 60px;
-    line-height: 1.2em;
-}
-
-.l-paragraph {
-    font-size: 18px;
-    line-height: 1.7em;
-}
-
-
-.btn {
-    color: #f4f4f4;
-    background: #93cb52;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-.btn:hover {
-    background: #7ab346;
+    color: #333;
+    line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
 }
 
 /* index.html */
 
 /* HEADER */ 
 
-header {
-    background: #333;
-    color: #f4f4f4;
+.hero {
+    background: #333 url('../Images/home/showcase.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
 }
+
 
 header #navbar {
     display: flex;
-    padding: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
+    padding: 20px 30px;
+    background: #333;
+    
+    opacity: 0.8;
+    width: 100%;
+    /*height: 70px;*/
+    position: fixed;
+    top: 0;
 }
 
 header #navbar #logo .logo {
-    display: inline-block;
     font-size: 32px;
 }
 
 header #navbar nav ul {
-    list-style: none;
     display: flex;
 }
 
 header #navbar nav ul li a {
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0 5px;
+    color: #fff;
 }
 
 header #navbar nav ul li a:hover {
-    background: #7ab346;
+    background: #28a745;
     border-radius: 5px;
     color: #fff;
 }
 
-header #showcase {
-    background: #333 url('../Images/home/showcase.jpg') no-repeat center center/cover;
-    
-    background-blend-mode: overlay;
-}
 
 header #showcase-content {
-    padding: 0 5rem;
     display: flex;
-    text-align: center;
-    height: 90vh;
-    width: 100vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    text-align: center;
+    height: 100%;
 }
 
-header #showcase-content h1 {
-    padding-bottom: 20px;
-}
 
 header #showcase-content p {
-    padding-bottom: 20px;
+    max-width: 600px;
+    margin: 20px 0 30px 0;
 }
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+
 
