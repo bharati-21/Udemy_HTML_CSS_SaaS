@@ -1,0 +1,31 @@
+/* Smartphone */
+@media screen and (max-width: 768px) {
+    .hero #navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    #navbar a {
+        padding: 10px;
+        margin: 0 3px 0px 0px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .row .column,
+    .flex-grid .row .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+    .main-footer .social>* {
+        margin: 0 10px;
+    }
+}
