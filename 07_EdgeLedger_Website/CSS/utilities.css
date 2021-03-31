@@ -65,22 +65,142 @@ img {
     opacity: 0.9;
 }
 
-.btn-primary {
+.btn-primary,
+.bg-primary {
     color: #fff;
     background: #28a745;
 }
 
-.btn-secondary {
-    color: #0284d0;
-    background: #fff;
+.btn-secondary,
+.bg-secondary {
+    color: #fff;
+    background: #0284d0;
 }
 
-.btn-dark {
+.btn-dark,
+.bg-dark {
     color: #fff;
     background: #333;
 }
 
-.btn-dark {
+.btn-light,
+.bg-light {
     color: #333;
     background: #f4f4f4;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 20px;
+}
+
+
+.flex-columns  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns  .row  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .row .column .column-1,
+.flex-columns .row .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .row .column .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.section-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+.flex-grid header h4 {
+    font-weight: 400;
+}
+
+.flex-grid header h2 {
+    font-size: 40px;
+    margin: 20px 0 10px 0;
+    font-weight: 100;
+}
+
+.flex-grid header p {
+    margin-bottom: 20px;
+}
+
+.flex-grid .row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-grid .row .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#team .section-header h4 {
+    padding: 10px 0;
 }
