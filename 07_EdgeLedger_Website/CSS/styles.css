@@ -58,6 +58,8 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
+
+    transition: 0.5s;
 }
 
 .hero .navbar .nav-links ul {
@@ -80,7 +82,7 @@ body {
 .hero #showcase {
     max-width: 80%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
 }
 
 .hero #showcase #showcase-content {
@@ -168,4 +170,34 @@ body {
 }
 
 
+.hero.blog {
+    background: url('../Images/home/blog.jpg') no-repeat center center/cover;
+    height: 70vh;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.post {
+    padding: 50px 30px;
+}
+
+.post h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
 
