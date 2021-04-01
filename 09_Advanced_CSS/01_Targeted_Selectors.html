@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Targeted Selectors</title>
+
+        <style>
+
+            div p {
+                background: #ddd;
+            }
+
+            /* Direct Child */
+            div > p {
+                background: black;
+                color: #fff;
+            }
+
+            /* All successors (sibling elements) after div */
+            div ~ p {
+                background: orangered;
+                color: white;
+            }
+
+            /* Directly after the element */
+            div + p {
+                background: #333;
+                color: #fff;
+            }
+
+            /* By attribute */ 
+            a[target] {
+                background: red;
+                color: yellow;
+            }
+
+            /* Specific attribute values */
+            input[type="text"], input[type="email"] {
+                width: 100%;
+                margin: 20px;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, ad!</p>
+
+            <ul>
+                <li>Item 1</li>
+                <li><p>Item 2</p></li>
+                <li>Item 3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores et aliquam accusamus impedit nostrum tempore enim quas dolore mollitia.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta ipsam omnis, ratione eveniet nulla officia, possimus molestias sapiente porro officiis adipisci. Dicta sapiente iure ipsa, commodi placeat quam? Quo, inventore doloribus! Architecto consectetur rerum facere. Tempora blanditiis iste ipsa odio nisi natus est, impedit perferendis voluptatem tempore quod cum.</p>
+
+       
+
+
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+
+        <br> <br> <br>
+
+        <form action="">
+            <input type="text" name="text" id="text" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime in pariatur officiis enim cumque magni?</p>
+
+    </body>
+</html>
