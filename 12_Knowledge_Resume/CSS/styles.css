@@ -47,6 +47,8 @@ h1 {
     background: white;
 }
 
+
+/* BOXES */
 #timeleine ul li div {
     position: relative;
     bottom: 0;
@@ -54,16 +56,23 @@ h1 {
     padding: 1rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
+/* RIGHT SIDE */
 #timeleine ul li:nth-child(odd) div {
     left: 40px;
+    transform: translate(200px, 0);
 }
 
+/* LEFT SIDE */
 #timeleine ul li:nth-child(even) div {
     left: -434px;
+    transform: translate(-200px, 0);
 }
 
+/* TO ADD CIRCLES */
 #timeleine ul li::after {
     content: '';
     position: absolute;
@@ -71,7 +80,7 @@ h1 {
     bottom: 0;
     width: 25px;
     height: 25px;
-    background: var(--secondary-color);
+    background: inherit;
     transform: translateX(-50%);
     border-radius: 50%;;
     transition: background 0.5s ease-in-out;
@@ -94,25 +103,36 @@ h1 {
     border-color: transparent var(--secondary-color) transparent transparent; 
 }
 
+/* LEFT SIDE ARROWS */
 #timeleine ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0px 8px 16px;
     border-color: transparent transparent transparent var(--secondary-color);
 }
 
+#timeleine ul li.show::after {
+    background: var(--secondary-color);
+}
+
+/* SCROLL EFFECT */
+#timeleine ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
 
 /* RESPONSIVE */
-
 @media (max-width: 900px) {
     #timeleine ul li div {
         width: 250px;
     }
 
     #timeleine ul li:nth-child(even) div {
-        left: -248px;
+        left: -280px;
     }
 }
 
+/* SMARTPHONE */
 @media (max-width: 600px) {
     #timeleine ul li {
         margin-left: 20px;
@@ -131,4 +151,4 @@ h1 {
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary-color) transparent transparent;
     }
-}
+} 
