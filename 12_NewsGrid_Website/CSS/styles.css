@@ -190,6 +190,18 @@ p {
     color: var(--primary-color);
 }
 
+.page-container {
+    margin: 0.8rem 0;
+    padding: 0 7rem; 
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+    grid-row: 1 / span 3;
+}
+
 /* NAVIGATION BAR */
 #main-nav {
     background: #fff;
@@ -320,3 +332,5 @@ p {
     width: 90%;
     margin-top: 0.5rem;
 }
+
+/* ABOUT PAGE */
