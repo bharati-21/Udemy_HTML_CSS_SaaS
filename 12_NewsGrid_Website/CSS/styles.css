@@ -181,8 +181,8 @@ p {
 }
 
 .list li {
-    padding: 0.5rem;
-    border: #555 dotted 1px;
+    padding: 0.5rem 0 ;
+    border-bottom: #444 dotted 2px;
     width: 90%;
 }
 
@@ -277,7 +277,6 @@ p {
 }
 
 #showcase .showcase-content {
-    width: 80vh;
     z-index: 1;
 }
 
