@@ -1,0 +1,103 @@
+/* Utility Classes */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0.15rem;
+  overflow: hidden; }
+
+.logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.btn-main, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight: bold; }
+
+.btn-main {
+  color: #333;
+  background: #ffbc00; }
+
+.btn-dark {
+  background: #333;
+  color: #f4f4f4; }
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333; }
+
+button[class^='btn']:hover,
+a[class^='btn']:hover,
+input[class^='btn']:hover {
+  background: #ffbc00;
+  opacity: 0.8; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: white; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+/* Header */
+#header {
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff; }
+  #header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem; }
+    #header .navbar nav ul {
+      display: flex;
+      flex-direction: row; }
+      #header .navbar nav ul li {
+        padding: 1rem 1.5rem; }
+        #header .navbar nav ul li a {
+          text-transform: uppercase;
+          color: #fff;
+          font-weight: bold;
+          font-size: 1rem;
+          padding-bottom: 0.5rem;
+          transition: border-color 0.5s;
+          border-bottom: 3px solid transparent; }
+          #header .navbar nav ul li a:hover {
+            border-color: #ccc; }
+          #header .navbar nav ul li a.current-link {
+            border-color: #ffbc00; }
+  #header #showcase-content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    #header #showcase-content h1 {
+      font-size: 4rem;
+      line-height: 1.2; }
