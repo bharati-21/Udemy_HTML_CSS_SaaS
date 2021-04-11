@@ -230,7 +230,7 @@ img {
 
             &-img {
                 grid-area: about-img;
-                width: 400px;
+                width: 100%;
             }
 
             &-text {
@@ -429,3 +429,6 @@ img {
         }
     }
 }
+
+/* Importing Media Queries */
+@import 'media'

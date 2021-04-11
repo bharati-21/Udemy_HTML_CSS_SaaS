@@ -1,0 +1,202 @@
+/* Tablets and Smaller*/
+@media(max-width: 800px) {
+    #header {
+        height: 30rem;
+    }
+
+    #showcase-content {
+        height: 30vh;  
+        h1 {
+            font-size: 3rem;
+        } 
+    }
+}
+
+/* Smart Phones */
+@media(max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        nav {
+            ul {
+                li {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+    #header {
+        height: 10rem;
+        border-bottom: 3px solid $main-color;
+        background-position: 20% 30%;
+
+        &-inner {
+            height: 10rem;
+        }
+    }
+
+    #showcase-content {
+        display: none;   
+    }
+
+    /* Stack Grid Columns*/
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    //#about-c .about-logos,
+    #about-d .testimonials,
+    #contact-b .contact-info,
+    .work-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+
+
+    #home {
+        &-a {
+            .specials div {
+                border-bottom: 1px solid $medium-color;
+                padding-bottom: 1rem;
+                
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        &-b {
+            .stats div {
+                padding: 2rem 0 1rem;
+            }
+        }
+
+        &-c {
+            margin-bottom: 0;
+            .process {
+                background: $light-color;
+                
+                div {
+                    border-bottom: 2px solid $medium-color;
+                    padding-bottom: 2rem;
+
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        &-a {
+            padding: 1.5rem;
+            .about {
+                padding: 0 1rem;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'about-img'
+                    'about-text'
+                    'aw1'
+                    'aw2'
+                    'aw3';
+                
+                &-text {
+                    border: 3px solid $main-color;
+                }
+                .award-one, .award-two {
+                    border-bottom: 1px solid $medium-color;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+
+        &-b {
+            padding: 2rem;
+
+            .progress {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-c {
+            .about-logos {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 1.5rem;
+
+                img {
+                    width: 50%;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    #work-a {
+        padding: 2rem 1rem 3rem 1em;
+        .work-grid {
+            box-shadow: none;
+            grid-gap: 1.5rem;
+            .item {
+                box-shadow: 5px 2px 10px 0 rgba(0,0,0,0.5);
+            }
+        }
+    }
+    
+
+    #contact {
+        &-a {
+            padding: 2rem;
+            .text-field {
+                grid-template-areas:
+                    'name'
+                    'email'
+                    'subject'
+                    'phone'
+                    'message';
+                grid-gap: 1.7rem;
+            }
+        }
+        &-b {
+            .contact-info {
+                div {
+                    margin: 1rem 0;
+                    border-bottom: 1px dotted $light-color;
+                    padding-bottom: 2rem;
+                    
+                    &:last-child {
+                        padding-bottom: 0;
+                        border: none;
+                    }
+                }
+            }
+        }
+    
+        &-c {
+            h1 {
+                padding: 1rem;
+                font-size: 3rem;
+            }
+        }
+    }
+    
+
+    #main-footer {
+        height: 7rem;
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+        }
+    }
+}
+
+@media (max-height: 580px) {
+    #header {
+        #showcase-content {
+            height: 60vh;  
+            h1 {
+                font-size: 2rem;
+            } 
+        }
+    }
+    
+}
