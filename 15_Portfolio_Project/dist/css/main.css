@@ -208,6 +208,7 @@ img {
     height: 6.5rem;
     border-bottom: 3px solid #ffbc00; }
 
+/* Header navigation bar (Logo image and nav links) */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -232,6 +233,7 @@ img {
         .navbar nav ul li a.current-link {
           border-color: #ffbc00; }
 
+/* Header Showcase content */
 #showcase-content {
   height: 70vh;
   display: flex;
@@ -243,150 +245,189 @@ img {
     line-height: 1.2; }
 
 /* Home Sections */
-#home-a .specials {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem; }
-
-#home-a .fas {
-  padding-bottom: 0.4rem;
-  color: #ffbc00; }
-
-#home-b .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 1rem 0; }
-  #home-b .stats div {
-    color: #333; }
-    #home-b .stats div:nth-child(odd) {
-      background: #f4f4f4; }
-    #home-b .stats div:nth-child(even) {
-      background: #ccc; }
-
-#home-b li {
-  line-height: 2;
-  list-style: none; }
-  #home-b li.stats-title {
-    font-size: 1.5rem; }
-  #home-b li.stats-number {
-    font-size: 1.2rem;
-    font-weight: bold; }
-
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    background: #ffbc00;
-    color: #fff;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    padding: 1rem;
-    transition: all 1s; }
-  #home-c .process-icon {
-    border-radius: 50%;
-    background: #333;
-    color: #fff;
-    padding: 2rem;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    position: relative;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
-      background: #ffbc00;
-      width: 90px;
-      height: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
+#home {
+  /* Specialities */
+  /* statistics */
+  /* Creative Process */ }
+  #home-a .specials {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem; }
+  #home-a .fas {
+    padding-bottom: 0.4rem;
+    color: #ffbc00; }
+  #home-b .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0; }
+    #home-b .stats div {
+      color: #333; }
+      #home-b .stats div:nth-child(odd) {
+        background: #f4f4f4; }
+      #home-b .stats div:nth-child(even) {
+        background: #ccc; }
+  #home-b li {
+    line-height: 2;
+    list-style: none; }
+    #home-b li.stats-title {
+      font-size: 1.5rem; }
+    #home-b li.stats-number {
+      font-size: 1.2rem;
+      font-weight: bold; }
+  #home-c {
+    /* Styling of the icons */ }
+    #home-c .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      /* Step number in the top right of the icon */
+      /* Process icons */ }
+      #home-c .process-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 28px;
+        background: #ffbc00;
+        color: #fff;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s; }
+      #home-c .process-icon {
+        border-radius: 50%;
         background: #333;
+        color: #fff;
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        position: relative;
+        transition: all 1s;
+        /* On hovering over the icons, change the background color of the icon and the step number */ }
+        #home-c .process-icon:hover {
+          background: #ffbc00;
+          width: 90px;
+          height: 90px;
+          line-height: 90px; }
+          #home-c .process-icon:hover .process-step {
+            background: #333;
+            color: #fff; }
+    #home-c .fas {
+      padding: 2rem;
+      background: #333;
+      color: #fff;
+      border-radius: 50%; }
+      #home-c .fas .fas {
         color: #fff; }
 
-#home-c .fas {
-  padding: 2rem;
-  background: #333;
-  color: #fff;
-  border-radius: 50%; }
-  #home-c .fas .fas {
-    color: #fff; }
-
 /* About Sections */
-#about-a {
-  margin: 1rem auto; }
-  #about-a .about {
+#about {
+  /* About Me section describing the developer with image */
+  /* Technical Skills and Progress */
+  /* Logos of the Technical Skills Mentioned */
+  /* Testimonials by clients */ }
+  #about-a {
+    margin: 1rem auto; }
+    #about-a .about {
+      display: grid;
+      grid-template-areas: 'about-img about-text about-text' 'aw1 aw2 aw3';
+      grid-gap: 1.2rem;
+      /* Awards */ }
+      #about-a .about-img {
+        grid-area: about-img;
+        width: 400px; }
+      #about-a .about-text {
+        grid-area: about-text;
+        padding: 1rem;
+        border-left: 3px solid #ffbc00;
+        font-weight: bold; }
+      #about-a .about .award-one {
+        grid-area: aw1; }
+      #about-a .about .award-two {
+        grid-area: aw2; }
+      #about-a .about .award-three {
+        grid-area: aw3; }
+      #about-a .about .award-one .fas,
+      #about-a .about .award-two .fas,
+      #about-a .about .award-three .fas {
+        color: #ffbc00;
+        margin: 1rem; }
+  #about-b .progress {
+    width: 100%;
+    overflow: hidden;
+    height: 20px;
+    background: #f4f4f4;
+    border-radius: 4rem;
+    margin-bottom: 1rem; }
+    #about-b .progress div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background: #ffbc00; }
+  #about-c .about-logos {
     display: grid;
-    grid-template-areas: 'about-img about-text about-text' 'aw1 aw2 aw3';
-    grid-gap: 1.2rem; }
-    #about-a .about-img {
-      grid-area: about-img;
-      width: 400px; }
-    #about-a .about-text {
-      grid-area: about-text;
-      padding: 1rem;
-      border-left: 3px solid #ffbc00;
-      font-weight: bold; }
-    #about-a .about .award-one {
-      grid-area: aw1; }
-    #about-a .about .award-two {
-      grid-area: aw2; }
-    #about-a .about .award-three {
-      grid-area: aw3; }
-    #about-a .about .award-one .fas,
-    #about-a .about .award-two .fas,
-    #about-a .about .award-three .fas {
-      color: #ffbc00;
-      margin: 1rem; }
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center; }
+    #about-c .about-logos img {
+      width: 70%;
+      margin: 0 2rem; }
+  #about-d .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem; }
+    #about-d .testimonials .testimonial p {
+      padding: 0.75rem 0.5rem;
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+      border-radius: 0.5rem; }
+    #about-d .testimonials .testimonial ul.client {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none; }
+      #about-d .testimonials .testimonial ul.client li img {
+        width: 50px;
+        border: none;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        transition: all 1s; }
 
-#about-b .progress {
-  width: 100%;
-  overflow: hidden;
-  height: 20px;
-  background: #f4f4f4;
-  border-radius: 4rem;
-  margin-bottom: 1rem; }
-  #about-b .progress div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: #ffbc00; }
-
-#about-c .about-logos {
+/* Contact Page*/
+#contact-a .text-field {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center; }
-  #about-c .about-logos img {
-    width: 70%;
-    margin: 0 2rem; }
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-a .text-field .name-input {
+    grid-area: name; }
+  #contact-a .text-field .subject-input {
+    grid-area: subject; }
+  #contact-a .text-field .email-input {
+    grid-area: email; }
+  #contact-a .text-field .phone-input {
+    grid-area: phone; }
+  #contact-a .text-field .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-a .text-field .text-input {
+    padding: 0.5rem 1rem; }
 
-#about-d .testimonials {
+#contact-a .btn {
+  width: 50%;
+  border-radius: 10px;
+  font-size: 1rem; }
+
+#contact-b .contact-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem; }
-  #about-d .testimonials .testimonial p {
-    padding: 0.75rem 0.5rem;
-    border: 1px solid #ccc;
-    margin: 1rem 0;
-    border-radius: 0.5rem; }
-  #about-d .testimonials .testimonial ul.client {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none; }
-    #about-d .testimonials .testimonial ul.client li img {
-      width: 50px;
-      border: none;
-      border-radius: 50%;
-      margin-right: 0.5rem;
-      transition: all 1s; }
+  grid-template-columns: repeat(3, 1fr); }
 
-/* Work Sections */
+#contact-c h1 {
+  font-size: 4rem; }
+
+/* Footer Section */
 #main-footer {
   height: 5rem; }
   #main-footer .footer-content {
