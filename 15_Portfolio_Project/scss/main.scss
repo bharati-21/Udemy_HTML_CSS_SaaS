@@ -247,6 +247,24 @@ img {
                 margin: 1rem;
             }
         }
+        }
+    &-b {
+        .progress {
+            width: 100%;
+            overflow: hidden;
+            height: 20px;
+            background: $light-color;
+            border-radius: 4rem;
+            margin-bottom: 1rem;
+
+            div {
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background: $main-color;
+            }
+
+        }
     }
 }
 
