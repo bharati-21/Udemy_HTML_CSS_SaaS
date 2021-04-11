@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utilities';
+@import 'item_grid';
 
 // General Styles
 * {
@@ -309,6 +310,9 @@ img {
                                 border: none;
                                 border-radius: 50%;
                                 margin-right: 0.5rem;
+transition: all 1s;
+
+&:hover {}
                             }
                         }
                     }
@@ -316,6 +320,8 @@ img {
         }
     }
 }
+
+/* Work Sections */
 
 #main-footer {
     height: 5rem;
