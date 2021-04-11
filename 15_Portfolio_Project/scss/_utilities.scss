@@ -44,6 +44,28 @@
     }
 }
 
+.bg {
+    &-dark {
+        color: $light-color;
+        background: $dark-color;
+    }
+
+    &-medium {
+        color: $dark-color;
+        background: $medium-color;
+    }
+
+    &-light {
+        color: $dark-color;
+        background: $light-color;
+    }
+
+    &-main {
+        color: $dark-color;
+        background: $main-color;
+    }
+}
+
 button[class^='btn']:hover,
 a[class^='btn']:hover,
 input[class^='btn']:hover {
@@ -54,4 +76,66 @@ input[class^='btn']:hover {
 .lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1.5rem 0;
+    }
+
+    &-2 {
+        padding: 2rem 0;
+    }
+
+    &-3 {
+        padding: 3rem 0;
+    }
+
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+.my {
+    &-1 {
+        margin: 1.5rem 0;
+    }
+
+    &-2 {
+        margin: 2rem 0;
+    }
+
+    &-3 {
+        margin: 3rem 0;
+    }
+
+    &-4 {
+        margin: 4rem 0;
+    }
+}
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.bottom-line {
+    background: $main-color;
+    width: 3rem;
+    margin: 0 auto 1rem auto;
+    display: block;
+    height: 2px;
+}
+
+.main-color {
+    color: $main-color;
 }
