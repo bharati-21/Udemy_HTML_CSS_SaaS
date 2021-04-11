@@ -247,7 +247,7 @@ img {
                 margin: 1rem;
             }
         }
-        }
+    }
     &-b {
         .progress {
             width: 100%;
@@ -264,6 +264,55 @@ img {
                 background: $main-color;
             }
 
+        }
+        }
+
+        &-c {
+            .about-logos {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                // justify-content: center;
+                // align-items: center;
+                text-align: center;
+
+                img {
+                    width: 70%;
+                    margin: 0 2rem;
+                }
+            }
+        }
+
+        &-d {
+            .testimonials {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 1.5rem;
+
+                .testimonial {
+                    p {
+                        padding: 0.75rem 0.5rem;
+                        border: 1px solid $medium-color;
+                        margin: 1rem 0;
+                        border-radius: 0.5rem;
+                    }
+
+                    ul.client {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        list-style: none;
+
+                        li {
+
+                            img {
+                                width: 50px;
+                                border: none;
+                                border-radius: 50%;
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
         }
     }
 }
